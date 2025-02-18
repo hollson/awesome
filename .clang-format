@@ -1,0 +1,61 @@
+﻿# Generated from CLion C/C++ Code Style settings
+---
+Language: Cpp
+BasedOnStyle: LLVM # LLVM, Google, Chromium, Mozilla, WebKit, Microsoft, Linux
+AccessModifierOffset: -4 # 类成员的缩进
+AlignConsecutiveAssignments: true # 连续赋值对齐
+AlignConsecutiveDeclarations: true # 连续声明对齐
+AlignOperands: true # 按照运算符对齐
+AlignTrailingComments: true # 按照运算符对齐
+AlwaysBreakTemplateDeclarations: Yes # 模板声明换行
+AllowShortIfStatementsOnASingleLine: true # 单行if语句不换行
+BreakBeforeBraces: Custom # Allman, GNU, LLVM, Google, Mozilla, WebKit, Stroustrup, Custom
+CompactNamespaces: false
+CompactTextBlocks: false
+BraceWrapping: # 大括号换行
+    AfterCaseLabel: false
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    BeforeCatch: false
+    BeforeElse: false
+    BeforeLambdaBody: false
+    BeforeWhile: false
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+BreakConstructorInitializers: AfterColon # 构造函数初始化列表换行
+BreakConstructorInitializersBeforeComma: false
+ColumnLimit: 280
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ContinuationIndentWidth: 8
+IncludeCategories:
+    - Regex: "^<.*"
+      Priority: 1
+    - Regex: '^".*'
+      Priority: 2
+    - Regex: ".*"
+      Priority: 3
+IncludeIsMainRegex: "([-_](test|unittest))?$"
+IndentCaseLabels: true
+IndentWidth: 4
+InsertNewlineAtEOF: true
+MacroBlockBegin: ""
+MacroBlockEnd: ""
+MaxEmptyLinesToKeep: 2
+NamespaceIndentation: All
+SpaceAfterCStyleCast: true
+SpaceAfterTemplateKeyword: false
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInConditionalStatement: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+TabWidth: 4
+UseTab: ForIndentation
