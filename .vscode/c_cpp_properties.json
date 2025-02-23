@@ -17,6 +17,35 @@
             "intelliSenseMode": "macos-clang-x64",
             "configurationProvider": "ms-vscode.makefile-tools"
         }
+        // ,
+        // {
+        //     "name": "Windows",
+        //     "includePath": [
+        //         "${workspaceFolder}/**"
+        //     ],
+        //     "defines": [
+        //         "_DEBUG",
+        //         "UNICODE",
+        //         "_UNICODE"
+        //     ],
+        //     "windowsSdkVersion": "10.0.19041.0",
+        //     "compilerPath": "C:/MinGW/bin/gcc.exe",
+        //     "cStandard": "c11",
+        //     "cppStandard": "c++17",
+        //     "intelliSenseMode": "gcc-x64"
+        // },
+        // {
+        //     "name": "Linux",
+        //     "includePath": [
+        //         "${workspaceFolder}/**",
+        //         "/usr/include"
+        //     ],
+        //     "defines": [],
+        //     "compilerPath": "/usr/bin/gcc",
+        //     "cStandard": "c11",
+        //     "cppStandard": "c++17",
+        //     "intelliSenseMode": "gcc-x64"
+        // }
     ],
     "version": 4
 }

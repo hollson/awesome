@@ -4,8 +4,6 @@
 using namespace nat;
 
 int main() {
-	// Bug 修复：添加 using namespace nat;
-
 	NATGateway gateway;
 
 	// 注册服务
