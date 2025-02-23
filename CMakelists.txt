@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 # 添加源文件
-add_executable(awesome src/main.cpp)
+add_executable(awesome src/main.cpp src/nat_gateway.cpp src/client.cpp)
 
 # 如果你使用了外部库，还可以添加链接命令
 # target_link_libraries(MyProject some_external_library)

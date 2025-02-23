@@ -1,35 +1,20 @@
 #include <iostream>
+#include "nat_gateway.h"
 
-#include "cxxopts.hpp"
+using namespace nat;
 
-int main(const int argc, char *argv[]) {
-	cxxopts::Options options(argv[0], "An awesome example program\n");
+int main() {
+	// Bug 修复：添加 using namespace nat;
 
-	options.add_options()("h,help", "Show help")("v,verbose", "Enable verbose output")("o,output", "Set output file", cxxopts::value<std::string>())("n,number", "Number of items", cxxopts::value<int>());
+	NATGateway gateway;
 
-	const auto result = options.parse(argc, argv);
+	// 注册服务
+	gateway.registerService("ServiceA", "192.168.1.100:8080");
+	gateway.registerService("ServiceB", "192.168.1.101:9090");
 
-	// 如果没有传递任何参数，显示帮助信息并退出
-	if (argc == 1) {
-		std::cout << options.help() << std::endl;
-		return 0;
-	}
+	// 客户端请求服务
+	clientRequest(gateway, "ServiceA");
+	clientRequest(gateway, "ServiceC");
 
-	if (result.count("help")) {
-		std::cout << options.help() << std::endl;
-		return 0;
-	}
-
-	if (result.count("verbose")) {
-		std::cout << "Verbose mode enabled." << std::endl;
-	}
-
-	if (result.count("output")) {
-		std::cout << "Output file: " << result["output"].as<std::string>() << std::endl;
-	}
-
-	if (result.count("number")) {
-		std::cout << "Number: " << result["number"].as<int>() << std::endl;
-	}
 	return 0;
 }
