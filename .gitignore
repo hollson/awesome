@@ -33,7 +33,6 @@ logs
 *.vs
 *.user
 *.scc
-*.vscode
 *.vscodeignore
 .DS_Strre
 build
